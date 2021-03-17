@@ -37,3 +37,13 @@ div {
 
 .img-6 {
   background-image: url(/img/Image_6.jpg); }
+
+ul {
+  font-size: 30px; }
+
+ul > li {
+  font-size: 30px;
+  display: none; }
+
+button {
+  font-size: 30px; }

@@ -35,27 +35,72 @@ $(document).ready(function(){
 // 02 Галлерея
 
 
-$("div > div").on('click', function(){
-    // alert("Нажал на картинку: " + $(this).css('background-image')); // +ok
-    // alert("Нажал на картинку: " + $(this).attr('class')); + ok
+// $("div > div").on('click', function(){
+//     // alert("Нажал на картинку: " + $(this).css('background-image')); // +ok
+//     // alert("Нажал на картинку: " + $(this).attr('class')); + ok
     
-    // let cl = $(this).attr('class'); // +ok   получают два класса свой и родительский пока не div > div!
-    // let cl = this.className; // +ok получают два класса свой и родительский пока не div > div!
-    let path = $(this).css("background-image");
+//     // let cl = $(this).attr('class'); // +ok   получают два класса свой и родительский пока не div > div!
+//     // let cl = this.className; // +ok получают два класса свой и родительский пока не div > div!
+//     let path = $(this).css("background-image");
     
     
-    $(this).css('border', '4px solid red');
+//     $(this).css('border', '4px solid red');
 
    
-    $(".wrapper").css('background-image', path);
-});
+//     $(".wrapper").css('background-image', path);
+// });
+
+// Функция значения
+// var numbers = [-7, 4, 1, 9, -2];
+
+// $.each(numbers, function(index, value) {
+//   if (value < 0) {
+//     // console.log(value);
+//     console.log(index);
+//   }
+// });
+
+// Посчитать выбранные элементы
+
+    // let  count = $("div").length;
+
+    // console.log(count);
 
 
 
+// Что-то
 
-$("div > div").on('click', function() {
+    // let arr = ['img-1','img-2','img-3','img-4','img-5'];
+    // let i = 0 ;
 
-});
+
+    // lep p = 'wrapper' + arr[i];
+
+    // console.log(p);
+
+// Протое выпадающие меню
+
+        // let flag = false;
+        // $('ul').click(function() {
+        //     if(!flag) {
+        //         $('.menu-down').slideDown();
+        //     } else {
+        //         $('.menu-down').slideUp();
+        //     }
+        //     flag = !flag;
+        // });
+
+// Сумма php
+
+        $('button').click(function() {
+            $.ajax({url:"/php/sum.php", data:{a:5, b:5}, success: function(result) {
+                $('#div1').html(result);
+
+                console.log(result);
+            } })
+        })
+
+
 
 
 });
