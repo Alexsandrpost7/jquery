@@ -1,6 +1,7 @@
+
 $(document).ready(function(){
     //Code here  g
-    // alert("привет!"); +ok
+    // alert("привет!"); // +ok
 
 // Поменять цвет блока
 
@@ -30,6 +31,32 @@ $(document).ready(function(){
     
 // При клике по любым дивам, кроме .color_click - меняем цвет
     
+
+// 02 Галлерея
+
+
+$("div > div").on('click', function(){
+    // alert("Нажал на картинку: " + $(this).css('background-image')); // +ok
+    // alert("Нажал на картинку: " + $(this).attr('class')); + ok
+    
+    // let cl = $(this).attr('class'); // +ok   получают два класса свой и родительский пока не div > div!
+    // let cl = this.className; // +ok получают два класса свой и родительский пока не div > div!
+    let path = $(this).css("background-image");
+    
+    
+    $(this).css('border', '4px solid red');
+
+   
+    $(".wrapper").css('background-image', path);
+});
+
+
+
+
+$("div > div").on('click', function() {
+
+});
+
 
 });
 

@@ -6,3 +6,34 @@ div {
 
 .color_test {
   color: #4138b6; }
+
+.wrapper {
+  width: 1300px;
+  height: 600px;
+  background-repeat: no-repeat;
+  border: 1px solid yellowgreen; }
+
+.wrapper div {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  display: inline-block; }
+
+.img-1 {
+  background-image: url(/img/Image_1.jpg);
+  border: 8px solid black; }
+
+.img-2 {
+  background-image: url(/img/Image_2.jpg); }
+
+.img-3 {
+  background-image: url(/img/Image_3.jpg); }
+
+.img-4 {
+  background-image: url(/img/Image_4.jpg); }
+
+.img-5 {
+  background-image: url(/img/Image_5.jpg); }
+
+.img-6 {
+  background-image: url(/img/Image_6.jpg); }
