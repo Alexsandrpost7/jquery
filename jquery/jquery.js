@@ -92,16 +92,49 @@ $(document).ready(function(){
 
 // Сумма php
 
-        $('button').click(function() {
-            $.ajax({url:"/php/sum.php", data:{a:5, b:5}, success: function(result) {
-                $('#div1').html(result);
+//         $('#btn-1').click(function() {
+//             $.ajax({
+//                 url:"/php/sum.php", 
+//                 data:{a:5, b:5}, 
+//                 success: function(result) {
+//                     $('#div1').html(result);
 
-                console.log(result);
-            } })
-        })
+//                     // console.log(result);
+//                 } 
+//             });
+//         });
+
+
+// // Сумма php + ввод данных
 
 
 
+//         $('#btn__summa').click(function() {
+            
+//             let aa = $('#aa').val();
+//             let bb = $('#bb').val();
+
+//             $.ajax({
+//                 url:"/php/sum.php", 
+//                 data:{a:aa, b:bb}, 
+//                 success: function(result) {
+//                     $('#1_result').html(result);
+
+//                     // console.log(aa);
+//                     // console.log(bb);
+//                     // console.log(result);
+//                 } 
+//             });
+
+//         })
+
+
+
+
+
+//Через jSon получить данные с базы
+
+       
 
 });
 
